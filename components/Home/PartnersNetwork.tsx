@@ -3,43 +3,37 @@
 const partners = [
   {
     name: "Elizade University",
-    abbr: "EU",
     type: "Education",
-    color: "#1A2B6B",
+    logo: "/elizade.png",
   },
   {
     name: "Federal Ministry of Works & Housing",
-    abbr: "FMW",
     type: "Government",
-    color: "#C49A3C",
+    logo: "/federal-ministry.jfif",
   },
   {
     name: "Federal University of Technology",
-    abbr: "FUTA",
     type: "Education",
-    color: "#1A2B6B",
+    logo: "/futa-logo.jfif",
   },
   {
     name: "Royal Birds Hotel Akure",
-    abbr: "RBH",
     type: "Hospitality",
-    color: "#C49A3C",
+    logo: "/royal-birds.jfif",
   },
   {
     name: "Immobilaire Construction",
-    abbr: "IC",
     type: "Construction",
-    color: "#1A2B6B",
+    logo: "/Immobile-construction.png",
   },
   {
     name: "Stone Work Nig. Ltd",
-    abbr: "SW",
     type: "Construction",
-    color: "#C49A3C",
+    logo: "/stone-work.png",
   },
 ];
 
-// Triple the array so the loop is seamless
+// Triple for seamless loop
 const looped = [...partners, ...partners, ...partners];
 
 export default function PartnersNetwork() {
@@ -73,25 +67,27 @@ export default function PartnersNetwork() {
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
           <div
-            className="flex gap-4"
+            className="flex gap-5"
             style={{
-              animation: "slidePartners 25s linear infinite",
+              animation: "slidePartners 28s linear infinite",
               width: "max-content",
             }}
           >
             {looped.map((p, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 flex flex-col items-center justify-center gap-3 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-300 py-8 px-6 cursor-default"
-                style={{ width: "180px" }}
+                className="flex-shrink-0 flex flex-col items-center justify-center gap-4 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-300 py-7 px-6 cursor-default"
+                style={{ width: "190px" }}
               >
-                {/* Avatar */}
-                <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-bold text-sm flex-shrink-0"
-                  style={{ background: p.color }}
-                >
-                  {p.abbr}
+                {/* Real logo image */}
+                <div className="w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center bg-white border border-gray-100 p-1">
+                  <img
+                    src={p.logo}
+                    alt={p.name}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
+
                 <div className="text-center">
                   <p className="text-[#1A2B6B] font-semibold text-xs leading-snug">
                     {p.name}
@@ -105,7 +101,6 @@ export default function PartnersNetwork() {
           </div>
         </div>
 
-        {/* Inline keyframe */}
         <style jsx>{`
           @keyframes slidePartners {
             0% {
