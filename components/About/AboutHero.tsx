@@ -30,27 +30,28 @@ export default function AboutHero() {
               Quality.
             </h1>
 
-            {/* Bold intro */}
+            {/* Bold intro — client's exact first sentence */}
             <p className="text-[#1A2B6B] font-semibold text-base sm:text-lg leading-relaxed mb-5">
-              We are a full-service construction supply and engineering group —
-              combining steel, cement, haulage and engineering expertise under
-              one trusted name.
+              Gree Iloson Group of Companies specializes in the distribution of
+              quality construction engineering and innovation building products.
             </p>
 
-            {/* Body */}
+            {/* Body — client's exact remaining text */}
+            <p className="text-gray-500 text-sm leading-relaxed mb-4">
+              We also specialize in construction and maintenance servicing
+              including project management in electrical and engineering field.
+              Since inception Gree Iloson Group of Company has earned
+              reputation; it success is grounded in dedication to its clients
+              and paying attention to details.
+            </p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Gree Iloson Group of Companies was established in 1979 and has
-              grown into one of Nigeria&apos;s most respected construction
-              material distributors and engineering service providers. Through
-              our two subsidiaries — Gree Iloson Merchandise and Chris Ilo
-              Merchandise — we serve contractors, institutions and communities
-              across all 36 states with quality products and reliable service.
+              We have the ability and resources to undertake total engineering
+              product and services to the satisfaction of our clients.
             </p>
           </div>
 
           {/* Right — Image */}
           <div className="relative">
-            {/* Main image */}
             <div
               className="rounded-3xl overflow-hidden w-full"
               style={{ height: "520px" }}
@@ -85,7 +86,6 @@ export default function AboutHero() {
               </div>
             </div>
 
-            {/* Decorative gold dot pattern */}
             <div
               className="absolute -top-4 -right-4 w-24 h-24 rounded-2xl -z-10"
               style={{ background: "#C49A3C", opacity: 0.15 }}

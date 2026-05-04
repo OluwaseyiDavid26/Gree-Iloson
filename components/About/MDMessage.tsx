@@ -7,7 +7,6 @@ export default function MDMessage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left — Image */}
           <div className="relative order-2 lg:order-1">
-            {/* Main image */}
             <div
               className="rounded-3xl overflow-hidden w-full"
               style={{ height: "560px" }}
@@ -18,8 +17,6 @@ export default function MDMessage() {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-
-            {/* Floating name card — bottom right */}
             <div className="absolute -bottom-5 -right-3 sm:right-6 bg-[#C49A3C] rounded-2xl px-6 py-5 shadow-xl">
               <p
                 className="text-white font-bold text-base leading-none"
@@ -31,14 +28,11 @@ export default function MDMessage() {
                 Managing Director
               </p>
             </div>
-
-            {/* Decorative navy square — top left behind image */}
             <div className="absolute -top-4 -left-4 w-24 h-24 rounded-2xl bg-[#1A2B6B]/10 -z-10" />
           </div>
 
           {/* Right — Message */}
           <div className="order-1 lg:order-2">
-            {/* Tag */}
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="w-2 h-2 rounded-full bg-[#C49A3C]" />
               <span className="text-[#C49A3C] text-xs font-bold tracking-[0.2em] uppercase">
@@ -46,7 +40,6 @@ export default function MDMessage() {
               </span>
             </div>
 
-            {/* Section title */}
             <h2
               className="text-[#1A2B6B] font-bold leading-tight mb-8"
               style={{
@@ -54,11 +47,9 @@ export default function MDMessage() {
                 fontFamily: "var(--font-playfair), serif",
               }}
             >
-              Purpose Beyond <br />
-              Profit.
+              Purpose Beyond <br /> Profit.
             </h2>
 
-            {/* Big pull quote */}
             <div className="relative border-l-4 border-[#C49A3C] pl-6 mb-8">
               <span
                 className="absolute -top-4 -left-2 text-[#C49A3C] opacity-30 select-none"
@@ -74,34 +65,47 @@ export default function MDMessage() {
                 to profit. It has to be an activity that creates prosperity and
                 well-being for all those who are connected with it directly or
                 indirectly. Profit is only a by-product reflecting how well we
-                are carrying out the business activity.
+                are carrying out the business activity. We believe in the
+                ideology of purpose beyond profit.
               </p>
             </div>
 
-            {/* Body paragraphs */}
             <div className="flex flex-col gap-4 text-gray-500 text-sm leading-relaxed">
               <p>
-                Our commitment, firstly, is to the customers we serve — we are
-                in business for them. As a company in building materials,
-                haulage and construction, it is our aim to bring our customers
-                quality products that are reliable and best suited to their job
-                requirements.
+                Our commitment, firstly, is to the Customers we serve as we are
+                in business for them. As a Company in building materials (steel
+                and cement), haulage and construction, it is our aim to bring
+                our Customers quality products that are reliable and best suited
+                to our Customers&apos; job requirements. Subsequently, we ensure
+                that the product gives the Customers the kind of performance and
+                productivity that will enable our Customers to realize the full
+                value of the money paid. Our relationship with the Customers
+                does not end with a sale but a journey to starts with it. We can
+                say that the years we experienced in the past are significant
+                years and it is clearly seen that we intensively deliver our
+                best performance to focus on customer satisfaction.
               </p>
               <p>
-                We ensure that the product gives our customers the kind of
-                performance and productivity that enables them to realize the
-                full value of money paid. Our relationship with customers does
-                not end with a sale — that is only where the journey starts.
+                On behalf of the Board of Directors, I will like to thank our
+                Valuable customers, reliable dealers and suppliers. Besides, I
+                will also thank the staffs for their enthusiastic contribution
+                for applying their specialized knowledge to reliably producing a
+                high quality efficient working environment. They have clearly
+                made GIGC one of the outstanding organizations.
               </p>
               <p>
-                I believe the journey of GIGC is never ending. With the support
-                of my team and clients, I am confident that the company will
-                continue to scale milestones of excellence for years to come.
+                In addition, we are now in an ever-changing market environment,
+                in such situation we firmly believe in that &quot;trust&quot; is
+                key in persuading our customers to choose our quality products.
+                We totally accept that &quot;trust&quot; is a &quot;Win-Win
+                situation&quot; for a long relationship. I believe the journey
+                of GIGC is never ending with the support of my team and clients,
+                I am confident that the company will continue to scale
+                milestones of excellence for years to come.
               </p>
             </div>
 
-            {/* Signature */}
-            <div className="mt-8 flex items-center gap-4">
+            {/* <div className="mt-8 flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-[#1A2B6B] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                 CI
               </div>
@@ -111,7 +115,7 @@ export default function MDMessage() {
                   Managing Director, Gree Iloson Group of Companies
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

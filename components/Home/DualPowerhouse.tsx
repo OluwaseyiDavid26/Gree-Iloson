@@ -8,8 +8,7 @@ const subsidiaries = [
     tagline: "Steel. Iron. Engineering.",
     description:
       "Nigeria's trusted source for premium iron rods, structural pipes, wire mesh and engineering solutions. Supplying the backbone of construction since 1979.",
-    image:
-      "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=900&q=80",
+    image: "/dual-power1.jfif",
     offerings: [
       "Iron Rods (8mm–25mm)",
       "Structural Pipes",
@@ -19,7 +18,9 @@ const subsidiaries = [
     ],
     href: "/services",
     cta: "View Steel Products",
-    accent: "#C49A3C",
+    taglineColor: "#C49A3C",
+    btnBg: "#C49A3C",
+    btnText: "#ffffff",
   },
   {
     name: "Chris Ilo Merchandise",
@@ -27,8 +28,7 @@ const subsidiaries = [
     tagline: "Cement. Haulage. Nation.",
     description:
       "Authorized nationwide distributors of Dangote & BUA Cement. Backed by a robust truck haulage and leasing fleet serving all 36 states.",
-    image:
-      "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=900&q=80",
+    image: "/dual-power2.png",
     offerings: [
       "Dangote Cement",
       "BUA Cement",
@@ -38,13 +38,14 @@ const subsidiaries = [
     ],
     href: "/services",
     cta: "View Cement & Haulage",
-    accent: "#1A2B6B",
+    taglineColor: "#ffffff",
+    btnBg: "#1A2B6B",
+    btnText: "#ffffff",
   },
 ];
 
 export default function DualPowerhouse() {
   return (
-    //  <section className="bg-white w-full px-3 sm:px-4 py-6">
     <section className="bg-white w-full px-5 sm:px-8 lg:px-14 py-10">
       {/* Section header */}
       <div className="max-w-6xl mx-auto mb-6 flex items-end justify-between flex-wrap gap-4">
@@ -76,7 +77,7 @@ export default function DualPowerhouse() {
           <div
             key={i}
             className="relative rounded-3xl overflow-hidden group"
-            style={{ height: "520px" }}
+            style={{ minHeight: "560px" }}
           >
             {/* Background image */}
             <img
@@ -86,7 +87,7 @@ export default function DualPowerhouse() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/15" />
 
             {/* Top tag */}
             <div className="absolute top-6 left-6">
@@ -108,7 +109,7 @@ export default function DualPowerhouse() {
               {/* Tagline */}
               <p
                 className="text-xs font-semibold tracking-[0.15em] uppercase mb-2"
-                style={{ color: sub.accent }}
+                style={{ color: sub.taglineColor }}
               >
                 {sub.tagline}
               </p>
@@ -147,8 +148,8 @@ export default function DualPowerhouse() {
                 href={sub.href}
                 className="inline-flex items-center gap-2 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: sub.accent,
-                  color: "#fff",
+                  background: sub.btnBg,
+                  color: sub.btnText,
                 }}
               >
                 {sub.cta} <span>↗</span>

@@ -4,25 +4,25 @@ const timeline = [
   {
     year: "1979",
     title: "The Beginning",
-    desc: "Gregory Iloehika and Sons was established in Akure, Ondo State — originally specializing in the distribution of iron and steel across the region.",
+    desc: "Gree Iloson Merchandise Nigeria Limited, formally known as Gregory Iloehika and Sons, was established in Akure, Ondo State.",
     accent: "#C49A3C",
   },
   {
     year: "1991",
     title: "Official Incorporation",
-    desc: "The company was formally incorporated under the Company and Allied Matters Act of the Federal Republic of Nigeria, becoming Gree Iloson Merchandise Nigeria Limited.",
+    desc: "The company was formally incorporated under the Company and Allied Matters Act of the Federal Republic of Nigeria.",
     accent: "#1A2B6B",
   },
   {
-    year: "2000s",
-    title: "Expansion Era",
-    desc: "The business expanded its scope into different engineering and transport endeavors — including transformer installation, community borehole projects, truck leasing and cement distribution nationwide.",
+    year: "Expansion",
+    title: "Growing Beyond Steel",
+    desc: "Originally specializing in iron and steel distribution, the company expanded into transformer installation, community borehole projects, truck leasing and cement distribution nationwide.",
     accent: "#C49A3C",
   },
   {
     year: "Today",
     title: "Chris Ilo Merchandise is Born",
-    desc: "The expansion of the business birthed Chris Ilo Merchandise Nigeria Limited as a subsidiary company. Both companies are managed by dynamic professionals driven by commitment to quality goods, services and client satisfaction.",
+    desc: "The expansion of the business birthed Chris Ilo Merchandise Nigeria Limited as a subsidiary company. Both companies are managed by dynamic professionals driven by commitment to quality goods, services and the satisfaction of every client.",
     accent: "#1A2B6B",
   },
 ];
