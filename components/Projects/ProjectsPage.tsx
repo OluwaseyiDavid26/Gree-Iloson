@@ -58,7 +58,7 @@ const projects = [
     title: "Borehole Drilling & Installation",
     category: "Borehole",
     year: "2023",
-    image: "/borehole-drill.webp", // 📌 add image later
+    image: "/borehole-drill.webp",
   },
   {
     title: "Steel & Pipe Supply",
@@ -70,7 +70,7 @@ const projects = [
     title: "Power Transformer Upgrade",
     category: "Transformer",
     year: "2021",
-    image: "/transformer-upgrade.jpg", // 📌 add image later
+    image: "/transformer-upgrade.jpg",
   },
 ];
 

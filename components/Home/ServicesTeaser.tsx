@@ -243,8 +243,7 @@ const services = [
     desc: "Premium iron rods (8mm–25mm), structural pipes, wire mesh, fencing and binding wire for every scale of construction.",
     tag: "Gree Iloson Merch",
     accent: "#C49A3C",
-    image:
-      "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+    image: "/iron-rod-25mm-specification.jpg",
   },
   {
     number: "02",
@@ -252,8 +251,7 @@ const services = [
     desc: "Authorized nationwide distributors of Dangote Cement and BUA Cement. Bulk supply for contractors and developers.",
     tag: "Chris Ilo Merch",
     accent: "#1A2B6B",
-    image:
-      "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+    image: "/Dangote-Cement3.jpg",
   },
   {
     number: "03",
@@ -270,8 +268,7 @@ const services = [
     desc: "Professional electrical engineering — transformer installation and maintenance for communities, institutions and industries.",
     tag: "Engineering",
     accent: "#C49A3C",
-    image:
-      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    image: "/Essential-Guide-to-Transformer-Repair-and-Maintenance.jpg",
   },
   {
     number: "05",
@@ -279,8 +276,7 @@ const services = [
     desc: "Community and institutional borehole drilling. Clean water solutions delivered with engineering precision.",
     tag: "Engineering",
     accent: "#C49A3C",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    image: "/borehole-drilling-services-in-kenya.jpg",
   },
   {
     number: "06",
