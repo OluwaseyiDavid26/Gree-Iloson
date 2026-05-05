@@ -293,9 +293,23 @@ export default function Page() {
             <div className="relative z-10 flex flex-wrap gap-3">
               <Link
                 href="/contact"
-                className="bg-[#C49A3C] hover:bg-[#b08a32] text-white font-semibold px-7 py-3.5 rounded-xl text-sm transition-all duration-200 hover:-translate-y-0.5"
+                className="bg-[#C49A3C] hover:bg-[#b08a32] text-white font-semibold px-7 py-3.5 rounded-xl text-sm transition-all duration-200 hover:-translate-y-0.5 inline-flex items-center justify-center gap-2"
               >
-                Get a Quote ↗
+                Get a Quote
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
               </Link>
               <Link
                 href="/services"

@@ -462,9 +462,23 @@ export default function ServicesTeaser() {
         <div className="mt-6 flex justify-center sm:hidden">
           <Link
             href="/services"
-            className="w-full text-center text-sm font-semibold text-white bg-[#1A2B6B] px-6 py-3 rounded-xl"
+            className="w-full text-center text-sm font-semibold text-white bg-[#1A2B6B] px-6 py-3 rounded-xl inline-flex items-center justify-center gap-2"
           >
-            View All Services ↗
+            View All Services
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
           </Link>
         </div>
       </div>

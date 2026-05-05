@@ -57,7 +57,21 @@ export default function Navbar() {
             href="/contact"
             className="bg-[#1A2B6B] hover:bg-[#152259] text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 flex items-center gap-1.5"
           >
-            Contact Us <span>↗</span>
+            Contact Us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
           </Link>
         </div>
 
