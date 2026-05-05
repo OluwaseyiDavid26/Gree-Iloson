@@ -16,73 +16,61 @@ const projects = [
     title: "Structural Steel Supply",
     category: "Steel Supply",
     year: "2023",
-    image: "/steel-supply.jfif", // 📌 add image later
+    image: "/steel-construction-.webp",
   },
   {
     title: "Cement Bulk Supply",
     category: "Cement",
     year: "2023",
-    image: "/Cement Bulk Supply.jfif", // 📌 add image later
+    image: "/cement-bulk.jpg", // 📌 add image later
   },
   {
     title: "Transformer Installation",
     category: "Transformer",
     year: "2022",
-    image: "/Transformer Installation.jfif", // 📌 add image later
+    image: "/Transformer-installation1.webp", // 📌 add image later
   },
   {
     title: "Iron Rod Supply",
     category: "Steel Supply",
     year: "2023",
-    image: "/Iron Rod Supply.jfif", // 📌 add image later
+    image: "/iron-rod-steel.jfif", // 📌 add image later
   },
   {
     title: "Community Borehole Project",
     category: "Borehole",
     year: "2022",
-    image: "/Community Borehole Project.jfif", // 📌 add image later
+    image: "/community-borehole.jfif", // 📌 add image later
   },
   {
     title: "Nationwide Cement Distribution",
     category: "Cement",
     year: "2023",
-    image: "/Nationwide Cement Distribution.jfif", // 📌 add image later
+    image: "/nationwide.jpg", // 📌 add image later
   },
   {
     title: "Truck Haulage & Logistics",
     category: "Haulage",
     year: "2022",
-    image: "/Truck Haulage & Logistics.jfif", // 📌 add image later
+    image: "/truck&log.avif", // 📌 add image later
   },
   {
     title: "Borehole Drilling & Installation",
     category: "Borehole",
     year: "2023",
-    image: "/Borehole Drilling & Installation.jfif", // 📌 add image later
+    image: "/borehole-drill.webp", // 📌 add image later
   },
   {
     title: "Steel & Pipe Supply",
     category: "Steel Supply",
     year: "2022",
-    image: "/Steel & Pipe Supply.jfif",
+    image: "/steel&pipe.webp",
   },
   {
     title: "Power Transformer Upgrade",
     category: "Transformer",
     year: "2021",
-    image: "/Power Transformer Upgrade.jfif", // 📌 add image later
-  },
-  {
-    title: "Cement Supply — Residential Estate",
-    category: "Cement",
-    year: "2021",
-    image: "/Cement Supply — Residential Estate.jfif", // 📌 add image later
-  },
-  {
-    title: "Fleet Haulage — Ondo State",
-    category: "Haulage",
-    year: "2021",
-    image: "/fleet-haulage.jfif", // 📌 add image later
+    image: "/transformer-upgrade.jpg", // 📌 add image later
   },
 ];
 
