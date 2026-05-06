@@ -87,8 +87,7 @@ const engineeringServices = [
     number: "03",
     title: "Project Management",
     desc: "Full-scope construction and engineering project management — from planning to procurement, execution and handover.",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+    image: "/project-management.jfif",
     accent: "#C49A3C",
   },
 ];
@@ -369,7 +368,7 @@ export default function Page() {
                 style={{ height: "480px" }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=80"
+                  src="/Truck Haulage & Leasing.jfif"
                   alt="Truck Haulage"
                   className="w-full h-full object-cover"
                 />
