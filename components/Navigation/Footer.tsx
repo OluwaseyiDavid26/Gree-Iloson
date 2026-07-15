@@ -405,13 +405,489 @@
 //   );
 // }
 
+// "use client";
+// export default function Footer() {
+//   return (
+//     <footer style={{ position: "relative", background: "#101a3d" }}>
+//       <div className="footer-inner">
+//         <div className="footer-grid">
+//           <div className="footer-col-left">
+//             <p
+//               style={{
+//                 fontSize: 14,
+//                 color: "rgba(255,255,255,0.55)",
+//                 lineHeight: 1.7,
+//                 margin: 0,
+//               }}
+//             >
+//               Building strong relationships with reliable subcontractors and
+//               suppliers — quality construction materials and engineering
+//               services since 1979.
+//             </p>
+//             <div
+//               style={{
+//                 display: "flex",
+//                 alignItems: "center",
+//                 background: "rgba(255,255,255,0.06)",
+//                 border: "1px solid rgba(255,255,255,0.14)",
+//                 borderRadius: 999,
+//                 padding: "5px 5px 5px 18px",
+//                 gap: 8,
+//               }}
+//             >
+//               <input
+//                 type="email"
+//                 placeholder="Enter your email address"
+//                 style={{
+//                   flex: 1,
+//                   minWidth: 0,
+//                   background: "transparent",
+//                   border: "none",
+//                   outline: "none",
+//                   color: "#fff",
+//                   fontSize: 13,
+//                 }}
+//               />
+//               <button
+//                 style={{
+//                   background: "#c8963e",
+//                   color: "#101a3d",
+//                   fontSize: 12,
+//                   fontWeight: 700,
+//                   padding: "11px 18px",
+//                   borderRadius: 999,
+//                   border: "none",
+//                   whiteSpace: "nowrap",
+//                 }}
+//               >
+//                 Subscribe
+//               </button>
+//             </div>
+//           </div>
+
+//           <div className="footer-col-logo">
+//             <span
+//               style={{
+//                 width: 44,
+//                 height: 44,
+//                 borderRadius: 12,
+//                 border: "1px solid rgba(200,150,62,0.4)",
+//                 display: "flex",
+//                 alignItems: "center",
+//                 justifyContent: "center",
+//                 fontFamily: "'Playfair Display', serif",
+//                 fontSize: 18,
+//                 fontWeight: 700,
+//                 color: "#c8963e",
+//               }}
+//             >
+//               GI
+//             </span>
+//             <span
+//               style={{
+//                 fontFamily: "'Playfair Display', serif",
+//                 fontSize: 22,
+//                 fontWeight: 700,
+//                 color: "#fff",
+//               }}
+//             >
+//               Gree{" "}
+//               <span style={{ color: "#c8963e", fontStyle: "italic" }}>
+//                 Iloson
+//               </span>
+//             </span>
+//             <span
+//               style={{
+//                 fontSize: 11,
+//                 color: "rgba(255,255,255,0.4)",
+//                 textTransform: "uppercase",
+//                 letterSpacing: "0.14em",
+//               }}
+//             >
+//               Group of Companies
+//             </span>
+//           </div>
+
+//           <div className="footer-col-right">
+//             <a
+//               href="mailto:info@greeiloson.com"
+//               className="footer-contact-row"
+//               style={{ textDecoration: "none" }}
+//             >
+//               <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>
+//                 info@greeiloson.com
+//               </span>
+//               <span
+//                 style={{
+//                   width: 32,
+//                   height: 32,
+//                   borderRadius: 9,
+//                   background: "rgba(200,150,62,0.14)",
+//                   border: "1px solid rgba(200,150,62,0.3)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#c8963e",
+//                   flexShrink: 0,
+//                 }}
+//               >
+//                 ✉
+//               </span>
+//             </a>
+//             <a
+//               href="tel:09065611162"
+//               className="footer-contact-row"
+//               style={{ textDecoration: "none" }}
+//             >
+//               <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>
+//                 0906 561 1162
+//               </span>
+//               <span
+//                 style={{
+//                   width: 32,
+//                   height: 32,
+//                   borderRadius: 9,
+//                   background: "rgba(200,150,62,0.14)",
+//                   border: "1px solid rgba(200,150,62,0.3)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#c8963e",
+//                   flexShrink: 0,
+//                 }}
+//               >
+//                 ☎
+//               </span>
+//             </a>
+//             <div className="footer-contact-row">
+//               <span
+//                 className="footer-address"
+//                 style={{
+//                   fontSize: 13,
+//                   color: "rgba(255,255,255,0.65)",
+//                 }}
+//               >
+//                 28B, Ondo Road, Akure,
+//                 <br />
+//                 Ondo State, Nigeria.
+//               </span>
+//               <span
+//                 style={{
+//                   width: 32,
+//                   height: 32,
+//                   borderRadius: 9,
+//                   background: "rgba(200,150,62,0.14)",
+//                   border: "1px solid rgba(200,150,62,0.3)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#c8963e",
+//                   flexShrink: 0,
+//                 }}
+//               >
+//                 <svg
+//                   width="14"
+//                   height="14"
+//                   viewBox="0 0 24 24"
+//                   fill="none"
+//                   stroke="#c8963e"
+//                   strokeWidth="1.6"
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                 >
+//                   <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+//                   <circle cx="12" cy="10" r="3" />
+//                 </svg>
+//               </span>
+//             </div>
+//             <div
+//               style={{
+//                 display: "flex",
+//                 alignItems: "center",
+//                 gap: 8,
+//                 marginTop: 6,
+//               }}
+//             >
+//               <a
+//                 href="#"
+//                 aria-label="Facebook"
+//                 style={{
+//                   width: 34,
+//                   height: 34,
+//                   borderRadius: "50%",
+//                   border: "1px solid rgba(255,255,255,0.18)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#fff",
+//                   textDecoration: "none",
+//                 }}
+//               >
+//                 f
+//               </a>
+//               <a
+//                 href="#"
+//                 aria-label="Instagram"
+//                 style={{
+//                   width: 34,
+//                   height: 34,
+//                   borderRadius: "50%",
+//                   border: "1px solid rgba(255,255,255,0.18)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <svg
+//                   width="14"
+//                   height="14"
+//                   viewBox="0 0 24 24"
+//                   fill="none"
+//                   stroke="#fff"
+//                   strokeWidth="1.6"
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                 >
+//                   <rect x="2" y="2" width="20" height="20" rx="5" />
+//                   <circle cx="12" cy="12" r="4" />
+//                   <circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none" />
+//                 </svg>
+//               </a>
+//               <a
+//                 href="#"
+//                 aria-label="X"
+//                 style={{
+//                   width: 34,
+//                   height: 34,
+//                   borderRadius: "50%",
+//                   border: "1px solid rgba(255,255,255,0.18)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#fff",
+//                   textDecoration: "none",
+//                 }}
+//               >
+//                 x
+//               </a>
+//               <a
+//                 href="#"
+//                 aria-label="LinkedIn"
+//                 style={{
+//                   width: 34,
+//                   height: 34,
+//                   borderRadius: "50%",
+//                   border: "1px solid rgba(255,255,255,0.18)",
+//                   display: "flex",
+//                   alignItems: "center",
+//                   justifyContent: "center",
+//                   color: "#fff",
+//                   textDecoration: "none",
+//                 }}
+//               >
+//                 in
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div
+//         style={{
+//           height: 1,
+//           background: "rgba(255,255,255,0.1)",
+//           marginTop: 56,
+//         }}
+//       />
+
+//       <div className="footer-bottom">
+//         <p style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", margin: 0 }}>
+//           Copyright &copy; {new Date().getFullYear()}{" "}
+//           <span style={{ color: "rgba(255,255,255,0.55)", fontWeight: 600 }}>
+//             Gree Iloson Group of Companies
+//           </span>
+//           . All Rights Reserved.
+//         </p>
+//         <div className="footer-bottom-links">
+//           <a
+//             href="#"
+//             style={{
+//               fontSize: 11,
+//               fontWeight: 600,
+//               letterSpacing: "0.1em",
+//               textTransform: "uppercase",
+//               color: "rgba(255,255,255,0.4)",
+//               textDecoration: "none",
+//             }}
+//           >
+//             About
+//           </a>
+//           <a
+//             href="#"
+//             style={{
+//               fontSize: 11,
+//               fontWeight: 600,
+//               letterSpacing: "0.1em",
+//               textTransform: "uppercase",
+//               color: "rgba(255,255,255,0.4)",
+//               textDecoration: "none",
+//             }}
+//           >
+//             Services
+//           </a>
+//           <a
+//             href="#"
+//             style={{
+//               fontSize: 11,
+//               fontWeight: 600,
+//               letterSpacing: "0.1em",
+//               textTransform: "uppercase",
+//               color: "rgba(255,255,255,0.4)",
+//               textDecoration: "none",
+//             }}
+//           >
+//             Contact
+//           </a>
+//           <span
+//             style={{
+//               fontSize: 10,
+//               color: "rgba(255,255,255,0.4)",
+//               border: "1px solid rgba(255,255,255,0.15)",
+//               borderRadius: 999,
+//               padding: "6px 14px",
+//               letterSpacing: "0.1em",
+//               textTransform: "uppercase",
+//             }}
+//           >
+//             Est. 1979
+//           </span>
+//         </div>
+//       </div>
+
+//       <style jsx>{`
+//         .footer-inner {
+//           max-width: 1152px;
+//           margin: 0 auto;
+//           padding: 72px 56px 0;
+//         }
+//         .footer-grid {
+//           display: grid;
+//           grid-template-columns: 1fr auto 1fr;
+//           gap: 40px;
+//           align-items: start;
+//         }
+//         .footer-col-left {
+//           display: flex;
+//           flex-direction: column;
+//           gap: 24px;
+//           max-width: 300px;
+//         }
+//         .footer-col-logo {
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+//           gap: 10px;
+//           padding-top: 8px;
+//         }
+//         .footer-col-right {
+//           display: flex;
+//           flex-direction: column;
+//           gap: 16px;
+//           align-items: flex-end;
+//         }
+//         .footer-contact-row {
+//           display: flex;
+//           align-items: center;
+//           gap: 12px;
+//         }
+//         .footer-address {
+//           text-align: right;
+//         }
+//         .footer-bottom {
+//           max-width: 1152px;
+//           margin: 0 auto;
+//           padding: 22px 56px;
+//           display: flex;
+//           align-items: center;
+//           justify-content: space-between;
+//           gap: 16px;
+//           flex-wrap: wrap;
+//         }
+//         .footer-bottom-links {
+//           display: flex;
+//           align-items: center;
+//           gap: 28px;
+//         }
+
+//         /* Tablet */
+//         @media (max-width: 900px) {
+//           .footer-inner {
+//             padding: 56px 32px 0;
+//           }
+//           .footer-bottom {
+//             padding: 20px 32px;
+//           }
+//         }
+
+//         /* Mobile — collapse 3-column grid to a single stacked column */
+//         @media (max-width: 640px) {
+//           .footer-inner {
+//             padding: 48px 20px 0;
+//           }
+//           .footer-grid {
+//             grid-template-columns: 1fr;
+//             gap: 32px;
+//             text-align: center;
+//           }
+//           .footer-col-left {
+//             max-width: none;
+//             align-items: center;
+//           }
+//           .footer-col-right {
+//             align-items: center;
+//           }
+//           .footer-contact-row {
+//             justify-content: center;
+//           }
+//           .footer-address {
+//             text-align: left;
+//           }
+//           .footer-bottom {
+//             padding: 20px;
+//             flex-direction: column;
+//             align-items: flex-start;
+//             gap: 14px;
+//           }
+//           .footer-bottom-links {
+//             gap: 18px;
+//             flex-wrap: wrap;
+//           }
+//         }
+//       `}</style>
+//     </footer>
+//   );
+// }
+
 "use client";
+
+import { useEffect, useState } from "react";
+
 export default function Footer() {
+  const [showTop, setShowTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
     <footer style={{ position: "relative", background: "#101a3d" }}>
       <div className="footer-inner">
         <div className="footer-grid">
-          <div className="footer-col-left">
+          <div className="footer-col-left" style={{ gridArea: "left" }}>
             <p
               style={{
                 fontSize: 14,
@@ -424,17 +900,7 @@ export default function Footer() {
               suppliers — quality construction materials and engineering
               services since 1979.
             </p>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.14)",
-                borderRadius: 999,
-                padding: "5px 5px 5px 18px",
-                gap: 8,
-              }}
-            >
+            <div className="footer-newsletter">
               <input
                 type="email"
                 placeholder="Enter your email address"
@@ -465,7 +931,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="footer-col-logo">
+          <div className="footer-col-logo" style={{ gridArea: "logo" }}>
             <span
               style={{
                 width: 44,
@@ -508,83 +974,29 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="footer-col-right">
-            <a
-              href="mailto:info@greeiloson.com"
-              className="footer-contact-row"
-              style={{ textDecoration: "none" }}
-            >
+          <div className="footer-col-right" style={{ gridArea: "right" }}>
+            <a href="mailto:info@greeiloson.com" className="footer-contact-row">
               <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>
                 info@greeiloson.com
               </span>
-              <span
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 9,
-                  background: "rgba(200,150,62,0.14)",
-                  border: "1px solid rgba(200,150,62,0.3)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#c8963e",
-                  flexShrink: 0,
-                }}
-              >
-                ✉
-              </span>
+              <span className="footer-icon-btn">✉</span>
             </a>
-            <a
-              href="tel:09065611162"
-              className="footer-contact-row"
-              style={{ textDecoration: "none" }}
-            >
+            <a href="tel:09065611162" className="footer-contact-row">
               <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>
                 0906 561 1162
               </span>
-              <span
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 9,
-                  background: "rgba(200,150,62,0.14)",
-                  border: "1px solid rgba(200,150,62,0.3)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#c8963e",
-                  flexShrink: 0,
-                }}
-              >
-                ☎
-              </span>
+              <span className="footer-icon-btn">☎</span>
             </a>
             <div className="footer-contact-row">
               <span
                 className="footer-address"
-                style={{
-                  fontSize: 13,
-                  color: "rgba(255,255,255,0.65)",
-                }}
+                style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}
               >
                 28B, Ondo Road, Akure,
                 <br />
                 Ondo State, Nigeria.
               </span>
-              <span
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 9,
-                  background: "rgba(200,150,62,0.14)",
-                  border: "1px solid rgba(200,150,62,0.3)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#c8963e",
-                  flexShrink: 0,
-                }}
-              >
+              <span className="footer-icon-btn">
                 <svg
                   width="14"
                   height="14"
@@ -600,44 +1012,12 @@ export default function Footer() {
                 </svg>
               </span>
             </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                marginTop: 6,
-              }}
-            >
-              <a
-                href="#"
-                aria-label="Facebook"
-                style={{
-                  width: 34,
-                  height: 34,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(255,255,255,0.18)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#fff",
-                  textDecoration: "none",
-                }}
-              >
+
+            <div className="footer-socials">
+              <a href="#" aria-label="Facebook" className="footer-social-btn">
                 f
               </a>
-              <a
-                href="#"
-                aria-label="Instagram"
-                style={{
-                  width: 34,
-                  height: 34,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(255,255,255,0.18)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
+              <a href="#" aria-label="Instagram" className="footer-social-btn">
                 <svg
                   width="14"
                   height="14"
@@ -653,38 +1033,10 @@ export default function Footer() {
                   <circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none" />
                 </svg>
               </a>
-              <a
-                href="#"
-                aria-label="X"
-                style={{
-                  width: 34,
-                  height: 34,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(255,255,255,0.18)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#fff",
-                  textDecoration: "none",
-                }}
-              >
+              <a href="#" aria-label="X" className="footer-social-btn">
                 x
               </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                style={{
-                  width: 34,
-                  height: 34,
-                  borderRadius: "50%",
-                  border: "1px solid rgba(255,255,255,0.18)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#fff",
-                  textDecoration: "none",
-                }}
-              >
+              <a href="#" aria-label="LinkedIn" className="footer-social-btn">
                 in
               </a>
             </div>
@@ -709,43 +1061,13 @@ export default function Footer() {
           . All Rights Reserved.
         </p>
         <div className="footer-bottom-links">
-          <a
-            href="#"
-            style={{
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              textDecoration: "none",
-            }}
-          >
+          <a href="#" className="footer-bottom-link">
             About
           </a>
-          <a
-            href="#"
-            style={{
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              textDecoration: "none",
-            }}
-          >
+          <a href="#" className="footer-bottom-link">
             Services
           </a>
-          <a
-            href="#"
-            style={{
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              textDecoration: "none",
-            }}
-          >
+          <a href="#" className="footer-bottom-link">
             Contact
           </a>
           <span
@@ -764,6 +1086,31 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Floating back-to-top button */}
+      <button
+        onClick={scrollToTop}
+        aria-label="Back to top"
+        className="footer-scroll-top"
+        style={{
+          opacity: showTop ? 1 : 0,
+          pointerEvents: showTop ? "auto" : "none",
+        }}
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#101a3d"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="12" y1="19" x2="12" y2="5" />
+          <polyline points="5 12 12 5 19 12" />
+        </svg>
+      </button>
+
       <style jsx>{`
         .footer-inner {
           max-width: 1152px;
@@ -773,6 +1120,7 @@ export default function Footer() {
         .footer-grid {
           display: grid;
           grid-template-columns: 1fr auto 1fr;
+          grid-template-areas: "left logo right";
           gap: 40px;
           align-items: start;
         }
@@ -781,6 +1129,15 @@ export default function Footer() {
           flex-direction: column;
           gap: 24px;
           max-width: 300px;
+        }
+        .footer-newsletter {
+          display: flex;
+          align-items: center;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+          border-radius: 999px;
+          padding: 5px 5px 5px 18px;
+          gap: 8px;
         }
         .footer-col-logo {
           display: flex;
@@ -799,9 +1156,40 @@ export default function Footer() {
           display: flex;
           align-items: center;
           gap: 12px;
+          text-decoration: none;
+        }
+        .footer-icon-btn {
+          width: 32px;
+          height: 32px;
+          border-radius: 9px;
+          background: rgba(200, 150, 62, 0.14);
+          border: 1px solid rgba(200, 150, 62, 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #c8963e;
+          flex-shrink: 0;
         }
         .footer-address {
           text-align: right;
+        }
+        .footer-socials {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 6px;
+        }
+        .footer-social-btn {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          text-decoration: none;
+          flex-shrink: 0;
         }
         .footer-bottom {
           max-width: 1152px;
@@ -818,6 +1206,31 @@ export default function Footer() {
           align-items: center;
           gap: 28px;
         }
+        .footer-bottom-link {
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.4);
+          text-decoration: none;
+        }
+        .footer-scroll-top {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: #c8963e;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+          transition: opacity 0.3s ease;
+          z-index: 40;
+        }
 
         /* Tablet */
         @media (max-width: 900px) {
@@ -829,22 +1242,32 @@ export default function Footer() {
           }
         }
 
-        /* Mobile — collapse 3-column grid to a single stacked column */
+        /* Mobile — reorder to logo -> message/CTA -> contact -> socials, all centered */
         @media (max-width: 640px) {
           .footer-inner {
             padding: 48px 20px 0;
           }
           .footer-grid {
             grid-template-columns: 1fr;
+            grid-template-areas:
+              "logo"
+              "left"
+              "right";
             gap: 32px;
+            justify-items: center;
             text-align: center;
           }
           .footer-col-left {
             max-width: none;
+            width: 100%;
             align-items: center;
+          }
+          .footer-newsletter {
+            width: 100%;
           }
           .footer-col-right {
             align-items: center;
+            width: 100%;
           }
           .footer-contact-row {
             justify-content: center;
@@ -855,12 +1278,20 @@ export default function Footer() {
           .footer-bottom {
             padding: 20px;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            text-align: center;
             gap: 14px;
           }
           .footer-bottom-links {
             gap: 18px;
             flex-wrap: wrap;
+            justify-content: center;
+          }
+          .footer-scroll-top {
+            width: 40px;
+            height: 40px;
+            bottom: 18px;
+            right: 18px;
           }
         }
       `}</style>
