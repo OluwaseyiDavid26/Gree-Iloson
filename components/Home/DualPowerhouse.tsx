@@ -209,7 +209,6 @@
 //     </section>
 //   );
 // }
-
 "use client";
 
 import Link from "next/link";
@@ -306,7 +305,7 @@ export default function DualPowerhouse() {
         className="max-w-6xl mx-auto relative rounded-2xl overflow-hidden bg-white"
         style={{ border: "0.5px solid #E4E1D8" }}
       >
-        {/* center spine */}
+        {/* center spine — desktop/tablet only, mobile stacks instead */}
         <div
           className="hidden md:block absolute left-1/2 top-10 bottom-10 w-px -translate-x-1/2"
           style={{ background: "#E4E1D8" }}
@@ -316,19 +315,21 @@ export default function DualPowerhouse() {
           {subsidiaries.map((sub, i) => (
             <div
               key={i}
-              className="relative p-8 md:p-12 overflow-hidden"
+              className={`relative p-6 sm:p-8 md:p-12 overflow-hidden ${
+                i === 0 ? "border-b md:border-b-0" : ""
+              }`}
               style={{
+                borderColor: "#E4E1D8",
                 opacity: mounted ? 1 : 0,
                 transform: mounted ? "translateY(0)" : "translateY(16px)",
                 transition: `opacity 0.7s ease ${i * 0.15}s, transform 0.7s ease ${i * 0.15}s`,
               }}
             >
-              {/* watermark number */}
+              {/* watermark number — scales down on mobile so it doesn't dominate/crowd the text */}
               <span
-                className="absolute top-2 right-6 leading-none select-none pointer-events-none"
+                className="absolute top-1 right-3 sm:top-2 sm:right-6 leading-none select-none pointer-events-none text-[70px] sm:text-[110px] md:text-[160px]"
                 style={{
                   fontFamily: "var(--font-playfair), serif",
-                  fontSize: 160,
                   fontWeight: 700,
                   color: sub.watermarkColor,
                 }}
@@ -336,11 +337,8 @@ export default function DualPowerhouse() {
                 {sub.number}
               </span>
 
-              {/* image */}
-              <div
-                className="relative w-full rounded-xl overflow-hidden mb-7"
-                style={{ height: 340 }}
-              >
+              {/* image — height scales down on mobile instead of staying fixed at 340px */}
+              <div className="relative w-full rounded-xl overflow-hidden mb-6 sm:mb-7 h-[200px] sm:h-[260px] md:h-[340px]">
                 <img
                   src={sub.image}
                   alt={sub.name}
@@ -355,7 +353,7 @@ export default function DualPowerhouse() {
                 {sub.tagline}
               </p>
               <h3
-                className="font-bold text-2xl mb-3 leading-tight"
+                className="font-bold text-xl sm:text-2xl mb-3 leading-tight"
                 style={{
                   color: "#1A2B6B",
                   fontFamily: "var(--font-playfair), serif",
@@ -382,9 +380,10 @@ export default function DualPowerhouse() {
                 ))}
               </div>
 
+              {/* CTA — full width on mobile so long labels never overflow or feel cramped */}
               <Link
                 href={sub.href}
-                className="inline-flex items-center gap-2 text-xs font-semibold px-6 py-3.5 rounded-full transition-colors duration-200"
+                className="flex sm:inline-flex items-center justify-center sm:justify-start gap-2 text-xs font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-full transition-colors duration-200 text-center"
                 style={{
                   border: `1.5px solid ${sub.btnBorder}`,
                   background: sub.solidBtn
@@ -414,6 +413,7 @@ export default function DualPowerhouse() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="flex-shrink-0"
                 >
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
