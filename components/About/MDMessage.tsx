@@ -51,12 +51,12 @@ export default function MDMessage() {
             </h2>
 
             <div className="relative border-l-4 border-[#C49A3C] pl-6 mb-8">
-              <span
+              {/* <span
                 className="absolute -top-4 -left-2 text-[#C49A3C] opacity-30 select-none"
                 style={{ fontSize: "5rem", fontFamily: "serif", lineHeight: 1 }}
               >
                 &ldquo;
-              </span>
+              </span> */}
               <p
                 className="text-[#1A2B6B] font-semibold text-base sm:text-lg leading-relaxed italic relative z-10"
                 style={{ fontFamily: "var(--font-playfair), serif" }}

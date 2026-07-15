@@ -1,223 +1,331 @@
 "use client";
-
-const values = [
-  {
-    number: "01",
-    title: "Trust",
-    desc: "We believe trust is the foundation of every lasting relationship. It is the key to persuading our customers to choose our quality products and services — a win-win for all.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
-    accent: "#C49A3C",
-    bg: "#fffbf0",
-    border: "#f0e0b0",
-  },
-  {
-    number: "02",
-    title: "Excellence",
-    desc: "Our obsession for excellence drives everything we do — from the quality of products we supply to the precision of our engineering services on every project.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ),
-    accent: "#1A2B6B",
-    bg: "#f2f4fb",
-    border: "#c7cee8",
-  },
-  {
-    number: "03",
-    title: "Quality",
-    desc: "We ensure every product we supply gives our customers the kind of performance and productivity that lets them realize the full value of their investment.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-        <polyline points="22 4 12 14.01 9 11.01" />
-      </svg>
-    ),
-    accent: "#C49A3C",
-    bg: "#fffbf0",
-    border: "#f0e0b0",
-  },
-  {
-    number: "04",
-    title: "Client First",
-    desc: "Our commitment firstly is to the customers we serve — we are in business for them. Our relationship with customers does not end with a sale but a journey that starts with it.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 00-3-3.87" />
-        <path d="M16 3.13a4 4 0 010 7.75" />
-      </svg>
-    ),
-    accent: "#1A2B6B",
-    bg: "#f2f4fb",
-    border: "#c7cee8",
-  },
-  {
-    number: "05",
-    title: "Purpose Beyond Profit",
-    desc: "A business is not successful if it is only committed to profit. It must create prosperity and well-being for all those connected with it — directly or indirectly.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="10" />
-        <line x1="12" y1="8" x2="12" y2="12" />
-        <line x1="12" y1="16" x2="12.01" y2="16" />
-      </svg>
-    ),
-    accent: "#C49A3C",
-    bg: "#fffbf0",
-    border: "#f0e0b0",
-  },
-  {
-    number: "06",
-    title: "Impact",
-    desc: "Every project we undertake, every product we supply, and every community we serve is a reflection of our commitment to creating lasting positive impact across Nigeria.",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-      </svg>
-    ),
-    accent: "#1A2B6B",
-    bg: "#f2f4fb",
-    border: "#c7cee8",
-  },
-];
-
 export default function CoreValues() {
+  const values = [
+    {
+      n: "01",
+      title: "Trust",
+      tint: "gold",
+      desc: "We believe trust is the foundation of every lasting relationship — the key to persuading our customers to choose our quality products and services.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#c8963e"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 3l7 3v5.2c0 4.8-3 8.9-7 10.3-4-1.4-7-5.5-7-10.3V6z" />
+          <path d="M9 12.2l2.1 2.1L15.5 10" />
+        </svg>
+      ),
+    },
+    {
+      n: "02",
+      title: "Excellence",
+      tint: "navy",
+      desc: "Our obsession for excellence drives everything we do — from the quality of products we supply to the precision of our engineering services.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#101a3d"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 15c-2.8 0-5-3-5-6.5 0-1.5.4-2.7 1-3.5.9 1 2.3 1.6 4 1.6s3.1-.6 4-1.6c.6.8 1 2 1 3.5 0 3.5-2.2 6.5-5 6.5z" />
+          <path d="M12 15v6" />
+          <path d="M9 21h6" />
+        </svg>
+      ),
+    },
+    {
+      n: "03",
+      title: "Quality",
+      tint: "gold",
+      desc: "We ensure every product we supply gives our customers the performance and productivity that lets them realize the full value of their investment.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#c8963e"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M6.5 4h11L21 9.5 12 21 3 9.5z" />
+          <path d="M3 9.5h18" />
+          <path d="M9 4l-2.5 5.5L12 21l5.5-11.5L15 4" />
+        </svg>
+      ),
+    },
+    {
+      n: "04",
+      title: "Client First",
+      tint: "navy",
+      desc: "Our commitment firstly is to the customers we serve. Our relationship does not end with a sale — it's a journey that starts with it.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#101a3d"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M2 12l4.5-4.5a2 2 0 012.8 0L11 9.2" />
+          <path d="M22 12l-4.5-4.5a2 2 0 00-2.8 0L11 10.6l1.6 1.6a1.6 1.6 0 01-2.3 2.3L7 11.2" />
+          <path d="M2 12v5.5a1 1 0 001 1h1.5" />
+          <path d="M22 12v5.5a1 1 0 01-1 1h-1.5" />
+        </svg>
+      ),
+    },
+    {
+      n: "05",
+      title: "Purpose Beyond Profit",
+      tint: "gold",
+      desc: "A business is not successful if it is only committed to profit. It must create prosperity and well-being for all those connected with it.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#c8963e"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M15.5 8.5l-2 5-5 2 2-5z" />
+        </svg>
+      ),
+    },
+    {
+      n: "06",
+      title: "Impact",
+      tint: "navy",
+      desc: "Every project we undertake and every community we serve reflects our commitment to lasting positive impact across Nigeria.",
+      icon: (
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#101a3d"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 21V10" />
+          <path d="M12 10C12 6 9 4 5 4c0 4.5 3 6.5 7 6z" />
+          <path d="M12 13c0-3.5 2.5-5 6-5 0 3.8-2.6 5.6-6 5.6" />
+        </svg>
+      ),
+    },
+  ];
+
+  const tints = {
+    gold: {
+      bg: "#fffbf0",
+      border: "#f0e0b0",
+      ring: "conic-gradient(from 200deg,#c8963e,#e9c98a,#c8963e)",
+      shadow: "rgba(200,150,62,0.28)",
+      num: "#c8963e",
+      bar: "#c8963e",
+    },
+    navy: {
+      bg: "#f2f4fb",
+      border: "#c7cee8",
+      ring: "conic-gradient(from 200deg,#101a3d,#3a4a86,#101a3d)",
+      shadow: "rgba(16,26,61,0.22)",
+      num: "#101a3d",
+      bar: "#101a3d",
+    },
+  };
+
   return (
-    <section className="bg-white w-full px-5 sm:px-8 lg:px-14 py-16">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end mb-14">
-          <div>
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#C49A3C]" />
-              <span className="text-[#C49A3C] text-xs font-bold tracking-[0.2em] uppercase">
-                What Drives Us
-              </span>
-            </div>
-            <h2
-              className="text-[#1A2B6B] font-bold leading-tight"
+    // <section style={{ maxWidth: 1280, margin: "0 auto", padding: "72px 80px" }}>
+    <section
+      style={{
+        maxWidth: 1280,
+        margin: "0 auto",
+        padding: "72px 80px",
+        background: "#ffffff",
+      }}
+    >
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: 24,
+          alignItems: "end",
+          marginBottom: 52,
+        }}
+      >
+        <div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              marginBottom: 16,
+            }}
+          >
+            <span
               style={{
-                fontSize: "clamp(2rem, 4vw, 3rem)",
-                fontFamily: "var(--font-playfair), serif",
+                width: 6,
+                height: 6,
+                borderRadius: "50%",
+                background: "#c8963e",
+              }}
+            />
+            <span
+              style={{
+                fontFamily: "'Inter',sans-serif",
+                fontSize: 13,
+                fontWeight: 600,
+                letterSpacing: "0.14em",
+                color: "#c8963e",
               }}
             >
-              Our Core Values
-            </h2>
+              WHAT DRIVES US
+            </span>
           </div>
-          <p className="text-gray-500 text-sm leading-relaxed lg:text-right">
-            These are the principles that guide every decision, every delivery
-            and every relationship we build at Gree Iloson Group of Companies.
-          </p>
+          <h2
+            style={{
+              fontFamily: "'Playfair Display',serif",
+              fontSize: 44,
+              fontWeight: 700,
+              color: "#101a3d",
+              margin: 0,
+            }}
+          >
+            Our Core Values
+          </h2>
         </div>
+        <p
+          style={{
+            fontSize: 14,
+            color: "#8a8a94",
+            lineHeight: 1.7,
+            margin: 0,
+            textAlign: "right",
+          }}
+        >
+          These are the principles that guide every decision, every delivery and
+          every relationship we build at Gree Iloson Group of Companies.
+        </p>
+      </div>
 
-        {/* Values grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {values.map((v, i) => (
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3,1fr)",
+          gap: 20,
+        }}
+      >
+        {values.map((v) => {
+          const t = tints[v.tint as keyof typeof tints];
+          return (
             <div
-              key={i}
-              className="group rounded-3xl p-8 flex flex-col gap-4 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              style={{ background: v.bg, border: `1px solid ${v.border}` }}
+              key={v.n}
+              style={{
+                background: t.bg,
+                border: `1px solid ${t.border}`,
+                borderRadius: 22,
+                padding: 32,
+                display: "flex",
+                flexDirection: "column",
+                gap: 16,
+              }}
             >
-              {/* Top row — icon + number */}
-              <div className="flex items-center justify-between">
-                <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                  style={{ background: v.accent + "20", color: v.accent }}
-                >
-                  {v.icon}
-                </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
                 <span
-                  className="text-3xl font-bold opacity-10"
                   style={{
-                    color: v.accent,
-                    fontFamily: "var(--font-playfair), serif",
+                    width: 56,
+                    height: 56,
+                    borderRadius: "50%",
+                    background: t.ring,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow: `0 6px 16px ${t.shadow}`,
                   }}
                 >
-                  {v.number}
+                  <span
+                    style={{
+                      width: 48,
+                      height: 48,
+                      borderRadius: "50%",
+                      background: "#ffffff",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {v.icon}
+                  </span>
+                </span>
+                <span
+                  style={{
+                    fontFamily: "'Playfair Display',serif",
+                    fontSize: 30,
+                    fontWeight: 700,
+                    color: t.num,
+                    opacity: 0.16,
+                  }}
+                >
+                  {v.n}
                 </span>
               </div>
-
-              {/* Title */}
               <h3
-                className="font-bold text-lg text-[#1A2B6B]"
-                style={{ fontFamily: "var(--font-playfair), serif" }}
+                style={{
+                  fontFamily: "'Playfair Display',serif",
+                  fontSize: 19,
+                  color: "#101a3d",
+                  margin: 0,
+                }}
               >
                 {v.title}
               </h3>
-
-              {/* Desc */}
-              <p className="text-gray-500 text-sm leading-relaxed flex-1">
+              <p
+                style={{
+                  fontSize: 13,
+                  color: "#77767d",
+                  lineHeight: 1.65,
+                  margin: 0,
+                  flex: 1,
+                }}
+              >
                 {v.desc}
               </p>
-
-              {/* Bottom accent line */}
               <div
-                className="w-10 h-1 rounded-full mt-2 transition-all duration-300 group-hover:w-16"
-                style={{ background: v.accent }}
+                style={{
+                  width: 40,
+                  height: 3,
+                  borderRadius: 999,
+                  background: t.bar,
+                }}
               />
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
   );
