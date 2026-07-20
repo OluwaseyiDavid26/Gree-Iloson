@@ -331,7 +331,7 @@ export default function Testimonials() {
         </div>
 
         {/* CTA */}
-        <div className="flex justify-center mt-8">
+        {/* <div className="flex justify-center mt-8">
           <a
             href="/testimonials"
             className="inline-flex items-center gap-2 text-xs font-semibold px-7 py-3.5 rounded-full transition-colors duration-200"
@@ -353,7 +353,7 @@ export default function Testimonials() {
               <polyline points="12 5 19 12 12 19" />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
