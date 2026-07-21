@@ -194,25 +194,7 @@ export default function ServicesTeaser() {
                 <p className="text-gray-300 text-sm leading-relaxed mb-4 transition-all duration-300 opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-24 overflow-hidden">
                   {s.desc}
                 </p>
-                <div
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
-                  style={{ color: s.accent }}
-                >
-                  Learn more
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </div>
+               
               </div>
             </div>
           ))}
